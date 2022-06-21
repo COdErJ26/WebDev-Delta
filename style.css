@@ -1,0 +1,44 @@
+body{
+    margin:0;
+    padding:0;
+    background-color: black;
+}
+
+h1{
+    color: white;
+    margin: 30px;
+    text-align: center;
+    
+}
+.Gridbutton{
+   justify-content: center;
+   display: grid;
+   grid-template-columns: repeat(6,100px);
+   grid-gap: 15px;
+}
+
+@keyframes clicking {
+    from{background-color: aqua;}
+    to{background-color: red;    
+    }
+}
+.gitem{
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+}
+.animeg{
+    animation: clicking;
+    animation-duration:1s;
+    animation-iteration-count: 1;
+    
+}
+@media (max-width: 846px){
+    .Gridbutton{
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(4,100px);
+        grid-gap: 15px;
+     }
+}
